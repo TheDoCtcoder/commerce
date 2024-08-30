@@ -34,7 +34,7 @@ function CarItem({ car }) {
                 </div>
                 <Separator className=' my-2'/>
                 <div className=' flex items-center justify-between'>
-                    <h2 className=' font-bold text-xl'>${car.price}</h2>
+                    <h2 className=' font-bold text-xl'>€{car.price}</h2>
                     
                     <h2 className=' text-primary text-sm flex gap-2 items-center'>
                     
