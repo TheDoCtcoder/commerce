@@ -7,8 +7,9 @@ import Contact from './contact'
 import {ClerkProvider} from '@clerk/clerk-react'
 
 const router=createBrowserRouter([
+  // basename="/commerce/",
   {
-    path:'/',
+    path:'/commerce',
     element:<Home/>
   },
   {

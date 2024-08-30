@@ -10,7 +10,7 @@ function Hero() {
             <h2 className=' text-[60px] font-bold'>Trouvez votre voiture de rêve.</h2>
             <Search/>
             {/* <img src="/tesla.png" alt="tesla" className=' mt-10' /> */}
-            <img src="/tesla2.png" alt="tesla" className=' mt-10' />
+            <img src="tesla2.png" alt="tesla" className=' mt-10' />
         </div>
         
         </div>
