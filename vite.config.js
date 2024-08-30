@@ -7,7 +7,7 @@ import { defineConfig } from "vite"
 export default defineConfig({
   build: { chunkSizeWarningLimit: 3200, },
   plugins: [react()],
-  base: "/commerce/",
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
