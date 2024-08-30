@@ -15,9 +15,9 @@ function Header() {
         </ul>
 
         {isSignedIn ? 
-        <div className='flex items-center gap-5' >
+        <div className='flex items-center gap-2' >
             <UserButton/>
-            <Button>Submit Listing</Button>
+            <Button>Placer une annonce</Button>
         </div>
         : 
         <Button>Submit Listing</Button>
