@@ -111,7 +111,7 @@ const Category=[
     },
     {
         id:2,
-        name:'Sedan',
+        name:'Berline',
         icon:'https://cdn-icons-png.flaticon.com/128/3202/3202003.png'
     },
     {
@@ -121,17 +121,17 @@ const Category=[
     },
     {
         id:4,
-        name:'Electric',
+        name:'Electrique',
         icon:'https://cdn-icons-png.flaticon.com/128/4564/4564336.png'
     },
     {
         id:5,
-        name:'Convertible',
+        name:'Cabriolet',
         icon:'https://cdn-icons-png.flaticon.com/128/5035/5035202.png'
     },
     {
         id:5,
-        name:'Hybrid',
+        name:'Hybride',
         icon:'https://cdn-icons-png.flaticon.com/128/3202/3202003.png'
     },
     {
@@ -146,7 +146,7 @@ const Category=[
     },
     {
         id:5,
-        name:'Truck',
+        name:'Camion',
         icon:'https://cdn-icons-png.flaticon.com/128/5814/5814855.png'
     },
  

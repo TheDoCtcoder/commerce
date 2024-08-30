@@ -11,14 +11,17 @@ function CarItem({ car }) {
     return (
         <div className=' rounded-xl bg-white border hover:shadow-md cursor-pointer'>
             <h2 className=' absolute  m-2   bg-green-500 px-2 rounded-full text-sm text-white' > Nouvelle </h2>
-            <img src={car?.image} width={'100%'} height={250} className='rounded-t-xl' />
+            <div className='  bg-cyan-700 h-60'>
+            <img src={car?.image} width={450} className='rounded-t-xl h-60 object-cover' />
+
+            </div>
             <div className=' p-4'>
                 <h2 className=' font-bold text-black  text-lg mb-2'>{car?.name}</h2>
                 <Separator />
                 <div className=' grid grid-cols-3 mt-5'>
                     <div className=' flex flex-col items-center'>
                         <LuFuel className=' text-lg mb-2' />
-                        <h2>{car.miles} Miles</h2>
+                        <h2>{car.miles} Km</h2>
                     </div>
                     <div className=' flex flex-col items-center'>
                         <IoMdSpeedometer className=' text-lg mb-2' />

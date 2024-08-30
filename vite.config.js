@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
   
 
 export default defineConfig({
-  base: '/commerce/',
+  base: './commerce/',
   plugins: [react()],
   resolve: {
     alias: {
