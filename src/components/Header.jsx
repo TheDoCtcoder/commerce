@@ -8,10 +8,10 @@ function Header() {
     <div className='flex  justify-between  items-center  shadow-sm p-5'>
         <img src="logo.svg" alt="logo" width={150} height={100}/>
         <ul className='  hidden md:flex gap-16'>
-            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Home</li>
-            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Search</li>
-            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>New</li>
-            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Preowned</li>
+            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Accueil</li>
+            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Rechercher</li>
+            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Nouveau</li>
+            <li className=' font-medium  hover:scale-105  transition-all cursor-pointer  hover:text-primary'>Précommande</li>
         </ul>
 
         {isSignedIn ? 
