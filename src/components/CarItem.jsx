@@ -29,7 +29,7 @@ function CarItem({ car }) {
                     </div>
                     <div className=' flex flex-col items-center'>
                         <GiGearStickPattern className=' text-lg mb-2' />
-                        <h2>{car.gearType} Miles</h2>
+                        <h2>{car.gearType}</h2>
                     </div>
                 </div>
                 <Separator className=' my-2'/>
