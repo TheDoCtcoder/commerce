@@ -1,8 +1,6 @@
 import FakeData from '@/Shared/FakeData';
 import React from 'react'
 import CarItem from './CarItem';
-
-import MesDatas from '../Shared/mostsearched.json';
 import {
     Carousel,
     CarouselContent,
@@ -12,8 +10,7 @@ import {
   } from "@/components/ui/carousel"
 
 function MostSearchedCar() {
-    // console.log(MesDatas.carList);
-    console.log(MesDatas);
+    console.log(FakeData.carList);
     
   return (
     <div className=' mx-24'>
@@ -21,10 +18,10 @@ function MostSearchedCar() {
 
         <Carousel>
   <CarouselContent>
-  {MesDatas.map((car,index)=>(
+  {FakeData.carList.map((car,index)=>(
     <CarouselItem className="basis-1/4">
-            <CarItem car={car} key={index}/>
-            {/* <CarItem car={car}/> */}
+            {/* <CarItem car={car} key={index}/> */}
+            <CarItem car={car}/>
             </CarouselItem>
 
     ))}
