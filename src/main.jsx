@@ -19,7 +19,7 @@ const router=createBrowserRouter([
 ])
 
 // Import your publishable key
-const PUBLISHABLE_KEY =k_test_cmVuZXdlZC1yaW5ndGFpbC03MC5jbGVyay5hY2NvdW50cy5kZXYk
+const PUBLISHABLE_KEY =pk_test_cmVuZXdlZC1yaW5ndGFpbC03MC5jbGVyay5hY2NvdW50cy5kZXYk
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
