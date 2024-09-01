@@ -146,7 +146,7 @@ const Category=[
     },
     {
         id:5,
-        name:'Camion',
+        name:'Camionette',
         icon:'https://cdn-icons-png.flaticon.com/128/5814/5814855.png'
     },
  

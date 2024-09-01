@@ -5,23 +5,33 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './home'
 import Contact from './contact'
 import {ClerkProvider} from '@clerk/clerk-react'
+import Profile from './profile'
+import AddListing from './add-listing'
+
+// let router = createBrowserRouter(routes, { basename: "/base" })
 
 const router=createBrowserRouter([
-  // basename="/commerce/",
   {
-    path:'/commerce',
+    path:'/',
     element:<Home/>
   },
   {
     path:'/contact',
     element:<Contact/>
+  },
+  {
+    path:'/profile',
+    element:<Profile/>
+  },
+  {
+    path:'/add-listing',
+    element:<AddListing/>
   }
 
-])
+],{ basename: "/commerce/" })
 
 // Import your publishable key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
-// const PUBLISHABLE_KEY = "pk_test_cmVuZXdlZC1yaW5ndGFpbC03MC5jbGVyay5hY2NvdW50cy5kZXYk"
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
