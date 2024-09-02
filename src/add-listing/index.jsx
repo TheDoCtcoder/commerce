@@ -7,7 +7,9 @@ import { Separator } from '@/components/ui/separator'
 import features from './../Shared/features.json'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Button } from '@/components/ui/button'
-import { Textarea } from '@/components/ui/textarea'
+import { CarListing } from './../../configs/schema'
+import { db } from './../../configs'
+import TextAreaChamp from './components/TextAreaChamp'
 
 
 
@@ -24,9 +26,22 @@ function AddListing() {
     console.log(formData);
   }
 
-  const onSubmit =(e)=>{
+  const onSubmit =async(e)=>{
     e.preventDefault();
     console.log(' le formulaire est ', formData);
+
+    try {
+      
+      const result = await db.insert(CarListing).values(formData);
+    
+    if (result) {
+      console.log('Data saved')
+    }
+
+    } catch (error) {
+      console.log('erreur : ',error)
+    }
+    
 
   }
 
@@ -47,8 +62,9 @@ function AddListing() {
                     : item.fieldType == 'dropdown'
                       ? <DropdownField item={item} handleInputChange={handleInputChange} />
                       : item.fieldType == 'textarea'
-                      ? <Textarea item={item}  handleInputChange={handleInputChange} />
-                        :null}
+                      ? <TextAreaChamp item={item}  handleInputChange={handleInputChange} />
+                        :null
+                        }
                 </div>
               ))}
             </div>

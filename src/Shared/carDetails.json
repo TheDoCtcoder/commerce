@@ -201,7 +201,7 @@
     {
       "label": "Description de l'annonce",
       "name": "listingDescription",
-      "fieldType": "text",
+      "fieldType": "textarea",
       "required": true,
       "column": 2,
       "icon": "FaFileAlt"
