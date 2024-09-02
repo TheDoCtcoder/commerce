@@ -1,97 +1,97 @@
 {
     "features": [
       {
-        "label": "Air Conditioner",
+        "label": "Climatisation",
         "name": "airConditioner",
         "fieldType": "checkbox"
       },
       {
-        "label": "Digital Odometer",
+        "label": "Compteur digital",
         "name": "digitalOdometer",
         "fieldType": "checkbox"
       },
       {
-        "label": "Heater",
+        "label": "Chauffage",
         "name": "heater",
         "fieldType": "checkbox"
       },
       {
-        "label": "Leather Seats",
+        "label": "Sièges en cuir",
         "name": "leatherSeats",
         "fieldType": "checkbox"
       },
       {
-        "label": "Panoramic Moonroof",
+        "label": "Toit panoramique",
         "name": "panoramicMoonroof",
         "fieldType": "checkbox"
       },
       {
-        "label": "Tachometer",
+        "label": "tachymètre",
         "name": "tachometer",
         "fieldType": "checkbox"
       },
       {
-        "label": "Touchscreen Display",
+        "label": "Ecran tactile",
         "name": "touchscreenDisplay",
         "fieldType": "checkbox"
       },
       {
-        "label": "Anti-lock Braking",
+        "label": "Freinage antiblocage",
         "name": "antiLockBraking",
         "fieldType": "checkbox"
       },
       {
-        "label": "Brake Assist",
+        "label": "Assistance au freinage",
         "name": "brakeAssist",
         "fieldType": "checkbox"
       },
       {
-        "label": "Child Safety Locks",
+        "label": "Sécurité pour enfants",
         "name": "childSafetyLocks",
         "fieldType": "checkbox"
       },
       {
-        "label": "Driver Air Bag",
+        "label": "Airbag conducteur",
         "name": "driverAirBag",
         "fieldType": "checkbox"
       },
       {
-        "label": "Power Door Locks",
+        "label": "Verouillage central",
         "name": "powerDoorLocks",
         "fieldType": "checkbox"
       },
       {
-        "label": "Stability Control",
+        "label": "Contrôle de stabilité",
         "name": "stabilityControl",
         "fieldType": "checkbox"
       },
       {
-        "label": "Traction Control",
+        "label": "Contrôle de traction",
         "name": "tractionControl",
         "fieldType": "checkbox"
       },
       {
-        "label": "Fog Lights Front",
+        "label": "Antibrouillard avant",
         "name": "fogLightsFront",
         "fieldType": "checkbox"
       },
       {
-        "label": "Rain Sensing Wiper",
+        "label": "Essuie-glace Automatique",
         "name": "rainSensingWiper",
         "fieldType": "checkbox"
       },
       {
-        "label": "Rear Spoiler",
+        "label": "Spoiler arrière",
         "name": "rearSpoiler",
         "fieldType": "checkbox"
       },
       {
-        "label": "Windows - Electric",
+        "label": "Vitres éléctriques",
         "name": "windowsElectric",
         "fieldType": "checkbox"
       },
       {
-        "label": "Comfort & Convenience",
+        "label": "Confort et commodité",
         "name": "comfortConvenience",
         "fieldType": "checkbox"
       },
@@ -116,13 +116,23 @@
         "fieldType": "checkbox"
       },
       {
-        "label": "Power Steering",
+        "label": "Direction assistée",
         "name": "powerSteering",
         "fieldType": "checkbox"
       },
       {
-        "label": "Vanity Mirror",
+        "label": "miroir de courtoisie",
         "name": "vanityMirror",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Gps",
+        "name": "Gpsinside",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Siège chauffant",
+        "name": "heatseat",
         "fieldType": "checkbox"
       }
     ]

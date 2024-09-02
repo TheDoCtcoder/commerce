@@ -1,7 +1,7 @@
 {
   "carDetails": [
     {
-      "label": "Listing Title",
+      "label": "Titre de l'annonce",
       "name": "listingTitle",
       "fieldType": "text",
       "required": true,
@@ -9,21 +9,21 @@
       "icon": "FaClipboardList"
     },
     {
-      "label": "Tagline",
+      "label": "Mot-clé",
       "name": "tagline",
       "fieldType": "text",
       "column": 2,
       "icon": "FaTag"
     },
     {
-      "label": "Original Price",
+      "label": "Prix original",
       "name": "originalPrice",
       "fieldType": "text",
       "column": 1,
       "icon": "FaDollarSign"
     },
     {
-      "label": "Selling Price",
+      "label": "Prix de vente",
       "name": "sellingPrice",
       "fieldType": "text",
       "required": true,
@@ -31,10 +31,10 @@
       "icon": "FaMoneyBillAlt"
     },
     {
-      "label": "Category",
+      "label": "Categorie",
       "name": "category",
       "fieldType": "dropdown",
-      "options": ["Sedan", "SUV", "Truck", "Coupe", "Convertible", "Van", "Hatchback","Electric","Hybrid"],
+      "options": ["Berline", "SUV", "Camionette", "Coupe", "Décapotable", "Van", "Hayon","Electrique","Hybride"],
       "required": true,
       "column": 1,
       "icon": "FaCar"
@@ -44,13 +44,13 @@
       "name": "condition",
       "fieldType": "dropdown",
       "required": true,
-      "options": ["New", "Used", "Certified Pre-Owned"],
+      "options": ["Nouvelle", "Occasion", "Occasion certifiée"],
       "column": 1,
       "icon": "FaCheckCircle"
     },
     
     {
-      "label": "Make",
+      "label": "Fabricant",
       "name": "make",
       "fieldType": "dropdown",
       "required": true,
@@ -102,7 +102,7 @@
       "icon": "FaIndustry"
     },
     {
-      "label": "Model",
+      "label": "Modèle",
       "name": "model",
       "fieldType": "text",
       "required": true,
@@ -110,7 +110,7 @@
       "icon": "FaCarSide"
     },
     {
-      "label": "Year",
+      "label": "Année",
       "name": "year",
       "fieldType": "number",
       "required": true,
@@ -118,7 +118,7 @@
       "icon": "FaCalendarAlt"
     },
     {
-      "label": "Drive Type",
+      "label": "Traction",
       "name": "driveType",
       "fieldType": "dropdown",
       "options": ["FWD", "RWD", "AWD", "4WD"],
@@ -127,25 +127,25 @@
       "icon": "FaRoad"
     },
     {
-      "label": "Transmission",
+      "label": "Vitesse",
       "name": "transmission",
       "fieldType": "dropdown",
-      "options": ["Automatic", "Manual", "CVT"],
+      "options": ["Automatique", "Manuelle", "CVT"],
       "required": true,
       "column": 1,
       "icon": "FaCogs"
     },
     {
-      "label": "Fuel Type",
+      "label": "Carburant",
       "name": "fuelType",
       "fieldType": "dropdown",
-      "options": ["Petrol", "Diesel", "Electric", "Hybrid"],
+      "options": ["Essence", "Diesel", "Electrique", "Hybride"],
       "required": true,
       "column": 1,
       "icon": "FaGasPump"
     },
     {
-      "label": "Mileage",
+      "label": "Km",
       "name": "mileage",
       "fieldType": "number",
       "required": true,
@@ -153,30 +153,30 @@
       "icon": "FaTachometerAlt"
     },
     {
-      "label": "Engine Size",
+      "label": "Taille",
       "name": "engineSize",
       "fieldType": "text",
       "column": 1,
       "icon": "FaWrench"
     },
     {
-      "label": "Cylinder",
+      "label": "Cylindrée",
       "name": "cylinder",
       "fieldType": "number",
       "column": 1,
       "icon": "FaCircle"
     },
     {
-      "label": "Color",
+      "label": "Couleur",
       "name": "color",
       "fieldType": "dropdown",
       "required": true,
-      "options": ["Black", "Blue", "Gold", "Pink", "Red", "Silver", "White"],
+      "options": ["Noire", "Bleue", "Dorée", "Rose", "Rouge", "Argentée", "Blanche"],
       "column": 2,
       "icon": "FaPalette"
     },
     {
-      "label": "Door",
+      "label": "porte",
       "name": "door",
       "fieldType": "number",
       "required": true,
@@ -191,15 +191,15 @@
       "icon": "FaIdCard"
     },
     {
-      "label": "Offer Type",
+      "label": "Type de vente",
       "name": "offerType",
       "fieldType": "dropdown",
-      "options": ["Buy", "Hot Offer", "Sell", "Urgent"],
+      "options": ["Achat", "Offre spéciale", "Vente", "Urgent"],
       "column": 2,
       "icon": "FaTags"
     },
     {
-      "label": "Listing Description",
+      "label": "Description de l'annonce",
       "name": "listingDescription",
       "fieldType": "text",
       "required": true,

@@ -37,7 +37,7 @@ function AddListing() {
         <h2 className=' font-bold text-4xl'>Ajoutez une annonce</h2>
         <form className=' p-10 border rounded-xl mt-10'>
           <div>
-            <h2 className=' font-medium  text-xl  mb-6'>Car Details</h2>
+            <h2 className=' font-medium  text-xl  mb-6'>Details de la voiture</h2>
             <div className='grid grid-cols-1  md:grid-cols-2 gap-5'>
               {carDetails.carDetails.map((item, index) => (
                 <div key={index}>
@@ -56,7 +56,7 @@ function AddListing() {
           <Separator className=" my-6" />
           {/* features list */}
           <div>
-            <h2 className=' font-medium text-xl my-6'>Features list</h2>
+            <h2 className=' font-medium text-xl my-6'>Options</h2>
             <div className=' grid grid-cols-2 md:grid-cols-3 gap-2 '>
               {features.features.map((item, index) => (
                 <div key={index} className=' flex gap-2 items-center' >
