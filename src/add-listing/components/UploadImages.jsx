@@ -5,22 +5,25 @@ import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { useEffect, useState } from 'react'
 import { IoMdCloseCircle } from "react-icons/io";
 import { CarImages } from './../../../configs/schema';
+import { db } from './../../../configs/index';
 
 
 
 
-function UploadImages({triggleUploadImages,setLoader}) {
+function UploadImages({triggerUploadImages,setLoader}) {
 
   const [selectedFileList,setSelectedFileList] = useState([])
 
 
   useEffect(()=>{
-    if(triggleUploadImages)
+    if(triggerUploadImages)
+    
+      
       
       UploadImageToServer()
     
   
-  },[triggleUploadImages])
+  },[triggerUploadImages])
 
   
 
@@ -43,28 +46,31 @@ function UploadImages({triggleUploadImages,setLoader}) {
     setSelectedFileList(result)
   }
 
-  const UploadImageToServer=async()=>{
+
+
+  const UploadImageToServer = async () => {
     console.log('je suis dans le composant toserver')
     setLoader(true)
-    await selectedFileList.forEach(async(file)=>{
-      const fileName=Date.now()+'.jpeg';
-      const storageRef= ref(storage,'car-marketplace/'+fileName)
+
+    await selectedFileList.forEach(async (file) => {
+      const fileName = Date.now() + '.jpeg';
+      const storageRef = ref(storage, 'car-marketplace/' + fileName)
       const metaData = {
         contentType: 'image/jpeg'
       }
-      await uploadBytes(storageRef,file,metaData).then((snapShot)=>{
+      await uploadBytes(storageRef, file, metaData).then((snapShot) => {
         console.log('uploaded files...');
-        
-      }).then(resp=>{
-        getDownloadURL(storageRef).then(async(downloadUrl)=>{
-            console.log(downloadUrl)
-            await db.insert(CarImages).values({
-              imageUrl:downloadUrl,
-              carListingId:triggleUploadImages
-            })
+
+      }).then(resp => {
+        getDownloadURL(storageRef).then(async (downloadUrl) => {
+          console.log(downloadUrl)     
+          await db.insert(CarImages).values({
+            imageUrl: downloadUrl,
+            carListingId: triggerUploadImages
+          })
         })
       })
-        setLoader(false)
+      setLoader(false)
     })
   }
 

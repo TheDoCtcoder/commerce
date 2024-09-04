@@ -68,6 +68,7 @@ const {user} = useUser()
     
     if (result) {
       console.log('Data saved')
+      console.log('result')
       console.log(result[0]?.id)
       setTriggerUploadImages(result[0]?.id);
       setLoader(false)
@@ -126,7 +127,8 @@ const {user} = useUser()
           {/* car image  */}
           <Separator className='my-6'/>
           <UploadImages triggerUploadImages={triggerUploadImages}
-           setLoader={(v)=>{setLoader(v);navigate('profile')}}/>
+          //  setLoader={(v)=>{setLoader(v);navigate('profile')}}/>
+           setLoader={(v)=>{setLoader(v)}}/>
           <div className=' mt-10 flex justify-end'>
             <Button  disable={loader} onClick={(e)=>onSubmit(e)}>
             {!loader?'Envoyez':<BiLoaderAlt className=' animate-spin text-lg' />}</Button>
