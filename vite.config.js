@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
   
 
 export default defineConfig({
-  build: { chunkSizeWarningLimit: 3200, },
+  build: { chunkSizeWarningLimit: 4000, },
   base:'/commerce/',
   plugins: [react()],
   resolve: {
