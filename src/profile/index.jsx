@@ -6,6 +6,7 @@ import React from 'react'
 import MyListing from './components/MyListing'
 
 function Profile() {
+ 
   return (
     <div>
       <Header />

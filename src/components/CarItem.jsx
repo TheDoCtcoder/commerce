@@ -7,34 +7,34 @@ import { MdOutlineOpenInNew } from "react-icons/md";
 
 
 
-function CarItem({ car }) {
+function CarItem({car}) {
     return (
         <div className=' rounded-xl bg-white border hover:shadow-md cursor-pointer'>
             <h2 className=' absolute  m-2   bg-green-500 px-2 rounded-full text-sm text-white' > Nouvelle </h2>
             <div className='  bg-cyan-700 h-60'>
-            <img src={car?.image} width={450} className='rounded-t-xl h-60 object-cover' />
+            <img src={car?.images[0]?.imageUrl} width={'100%'}  className='rounded-t-xl h-[240px]  object-cover' />
 
             </div>
             <div className=' p-4'>
-                <h2 className=' font-bold text-black  text-lg mb-2'>{car?.name}</h2>
+                <h2 className=' font-bold text-black  text-lg mb-2'>{car?.listingTitle}</h2>
                 <Separator />
                 <div className=' grid grid-cols-3 mt-5'>
                     <div className=' flex flex-col items-center'>
                         <LuFuel className=' text-lg mb-2' />
-                        <h2>{car.miles} Km</h2>
+                        <h2>{car?.mileage} Km</h2>
                     </div>
                     <div className=' flex flex-col items-center'>
                         <IoMdSpeedometer className=' text-lg mb-2' />
-                        <h2>{car.fuelType} </h2>
+                        <h2>{car?.fuelType} </h2>
                     </div>
                     <div className=' flex flex-col items-center'>
                         <GiGearStickPattern className=' text-lg mb-2' />
-                        <h2>{car.gearType}</h2>
+                        <h2>{car?.transmission}</h2>
                     </div>
                 </div>
                 <Separator className=' my-2'/>
                 <div className=' flex items-center justify-between'>
-                    <h2 className=' font-bold text-xl  text-green-600'>€{car.price}</h2>
+                    <h2 className=' font-bold text-xl  text-green-600'>€{car?.sellingPrice}</h2>
                     
                     <h2 className=' text-primary text-sm flex gap-2 items-center'>
                     
