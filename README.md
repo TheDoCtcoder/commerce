@@ -8,4 +8,6 @@ Application de vente et location de voiture complète
 - base de donnée SERVERLESS POSTGRESQL NEON done
 - envoi de message SENDBIRD not yet implemented 
 
+# DEMO : https://thedoctcoder.github.io/commerce/
+
 # Work in progress not finished yet.
