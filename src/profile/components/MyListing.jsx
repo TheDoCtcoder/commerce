@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { db } from './../../../configs/index'
 import { CarImages, CarListing } from './../../../configs/schema'
@@ -8,12 +8,14 @@ import { useUser } from '@clerk/clerk-react'
 import Service from '@/Shared/Service'
 import CarItem from '@/components/CarItem'
 import { FaRegTrashCan } from "react-icons/fa6";
+import { toast } from 'sonner'
 
 
 function MyListing() {
 
     const { user } = useUser();
     const [carList, setCarList] = useState([]);
+    const navigate=useNavigate()
 
     useEffect(() => {
         user && getUserCarListing();
@@ -34,7 +36,16 @@ function MyListing() {
         setCarList(resp)
     }
 
-    const removeItem = (item) => {
+    const removeItem = async(item) => {
+         
+      const result= await db.delete(CarListing)
+      .where(eq(CarListing.id, item.id))
+
+      if (result) {
+        toast('annonce supprimée')
+        window.location.reload(false);
+        // navigate('/')
+      }
         
     }
 
