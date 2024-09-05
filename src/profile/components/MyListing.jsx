@@ -34,6 +34,10 @@ function MyListing() {
         setCarList(resp)
     }
 
+    const removeItem = (item) => {
+        
+    }
+
     return (
         <div className=' mt-6'>
             <div className=' flex justify-between items-center'>
@@ -47,8 +51,11 @@ function MyListing() {
                     <div key={index}>
                         <CarItem car={item} />
                          <div className=' p-2 bg-gray-50  rounded-lg flex justify-between gap-3'>
+                            <Link to={'/add-listing?mode=edit&id='+item?.id} className=' w-full'>
                                 <Button variant="outline" className=" w-full ">Modifier</Button>
-                                <Button variant='destructive'><FaRegTrashCan/></Button>
+                            </Link>
+
+                                <Button onClick={() =>removeItem(item)}  variant='destructive'><FaRegTrashCan/></Button>
                             </div>
                     </div>
                 ))}

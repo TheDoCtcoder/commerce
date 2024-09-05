@@ -5,7 +5,7 @@ import React from 'react'
 
 
 
-function TextAreaChamp({item, handleInputChange}) {
+function TextAreaChamp({item, handleInputChange,carInfo}) {
   console.log("item de textarea ", item.name, item.required)
   return (
     <div>
@@ -13,7 +13,7 @@ function TextAreaChamp({item, handleInputChange}) {
          required={item.required} 
          onChange={(e)=>(handleInputChange(item.name,e.target.value))}
         />  */}
-        <Textarea required={item.required} 
+        <Textarea required={item.required} defaultValue={carInfo?.[item.name]}
         onChange={(e)=>(handleInputChange(item.name,e.target.value))} /> 
         
         

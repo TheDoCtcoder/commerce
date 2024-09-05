@@ -10,7 +10,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "75989"
     },
     {
         "listingTitle": "Peugeot 208",
@@ -23,7 +23,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "22989"
     },
     {
         "listingTitle": "Aixam",
@@ -36,7 +36,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "9989"
     },
     {
         "listingTitle": "Peugeot 2008 GT",
@@ -49,7 +49,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "18700"
     },
     {
         "listingTitle": "Fiat 500 Abarth",
@@ -62,7 +62,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "11000"
     },
     {
         "listingTitle": "VW Coccinelle",
@@ -75,7 +75,7 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "6800"
     },
     {
         "listingTitle": "Fiat Uno",
@@ -88,6 +88,6 @@
         "carListingId": 77}],
         "mileage": 235000,
         "transmission": "Automatique",
-        "sellingPrice": "15989"
+        "sellingPrice": "4500"
     }
 ]
