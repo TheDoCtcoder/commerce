@@ -11,34 +11,24 @@ import { eq } from 'drizzle-orm';
 
 
 
-function UploadImages({triggerUploadImages,setLoader, carInfo, mode}) {
+function UploadImages({triggerUploadImages,setLoader, carInfo, mode, setFichierImageBD,setFichierVide}) {
 
   const [selectedFileList,setSelectedFileList] = useState([])
   const [editCarImageList,setEditCarImageList] = useState([])
-
-  // useEffect = (() => {
-
-  //   if (mode == 'edit') {
-  //     setEditCarImageList([]);
-  //     carInfo?.images.forEach((image) => {
-  //       setEditCarImageList(prev => [...prev,image?.imageUrl])
-  //     })
-  //   }
-
-  // }, [carInfo])
-
 
   useEffect(()=>{
     if(mode=='edit')
     {
 
-      // setEditCarImageList([]);
+      setEditCarImageList([]);
       carInfo?.images?.forEach((image) => {
       
         setEditCarImageList(prev=>[...prev,image?.imageUrl])
     
       })
       console.log('image list : ', carInfo?.images)
+      setFichierImageBD(prev=>[...prev,carInfo?.images])
+     
     }
     },[carInfo])
 
@@ -59,11 +49,11 @@ function UploadImages({triggerUploadImages,setLoader, carInfo, mode}) {
 
       const files=event.target.files
       console.log(files)
+      setFichierVide((prev)=>[...prev,files])
 
       for (let i = 0; i < files?.length; i++) {
         const file = files[i];
         console.log(file);
-        // const objectUrl=URL.createObjectURL(file)
         setSelectedFileList((prev)=>[...prev,file])
         
       }
@@ -72,6 +62,15 @@ function UploadImages({triggerUploadImages,setLoader, carInfo, mode}) {
   const onImageRemove = (image,index)=>{
     const result=selectedFileList.filter((item)=>item!=image);
     setSelectedFileList(result)
+    console.log('image list de editCarimagelist de onimageremove : ', editCarImageList)
+    console.log('image dans la db ? ',carInfo?.images)
+
+    if (result.length>0){
+      console.log('fichier image non vide ',result)}
+      else {
+        console.log('fichier image vide ',result)
+        setFichierVide(result)
+      }
   }
 
   const onImageRemoveFromDB = async(image,index)=>{
@@ -79,6 +78,7 @@ function UploadImages({triggerUploadImages,setLoader, carInfo, mode}) {
     .returning({id:CarImages.id})
     const imageList=editCarImageList.filter((item)=>item!=image)
     setEditCarImageList(imageList)
+    setFichierImageBD(imageList)
   
     console.log('selected file lsite',selectedFileList)
     console.log('imagelist after remove on db',imageList)

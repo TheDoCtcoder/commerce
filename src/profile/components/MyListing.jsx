@@ -43,8 +43,8 @@ function MyListing() {
 
       if (result) {
         toast('annonce supprimée')
-        window.location.reload(false);
-        // navigate('/')
+        // window.location.reload(false);
+        navigate('/')
       }
         
     }

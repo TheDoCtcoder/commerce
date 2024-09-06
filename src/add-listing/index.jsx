@@ -32,6 +32,8 @@ const [loader,setLoader]=useState(false)
 const [carInfo,setCarInfo]=useState([])
 const navigate=useNavigate()
 const {user} = useUser()
+const [fichierVide,setFichierVide]=useState([])
+const [fichierImageBD,setFichierImageBD]=useState([])
 
 const mode=searchParams.get('mode');
 const recordId=searchParams.get('id')
@@ -54,6 +56,7 @@ const GetListingDetail=async()=>{
   setFormData(resp[0])
   console.log(resp);
   setFeaturesData(resp[0].features)
+  // setFeaturesData(resp[0])
   
 }
 
@@ -120,6 +123,9 @@ const GetListingDetail=async()=>{
       console.log(result[0]?.id)
       setTriggerUploadImages(result[0]?.id);
       setLoader(false)
+      // window.location.reload(false);
+      // navigate('/profile')
+      
     }
 
     } catch (error) {
@@ -176,14 +182,25 @@ const GetListingDetail=async()=>{
           </div>
           {/* car image  */}
           <Separator className='my-6'/>
-          <UploadImages triggerUploadImages={triggerUploadImages}
+          <UploadImages triggerUploadImages={triggerUploadImages} 
           carInfo={carInfo}
           mode={mode}
            setLoader={(v)=>{setLoader(v)}}
+           setFichierVide={(v)=>{setFichierVide(v)}}
+           setFichierImageBD={(v)=>{setFichierImageBD(v)}}
+       
            />
           <div className=' mt-10 flex justify-end'>
-            <Button  disable={loader} onClick={(e)=>onSubmit(e)}>
-            {!loader?'Envoyez':<BiLoaderAlt className=' animate-spin text-lg' />}</Button>
+            
+            { (fichierVide.length>0 || fichierImageBD.length>0)? 
+               <Button onClick={(e)=>onSubmit(e)}>Envoyez </Button>:
+               <Button disabled={true} className="bg-red-500">Envoyez </Button>}
+            
+         
+            
+            
+            
+           
           </div>
         </form>
         
