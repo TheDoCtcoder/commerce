@@ -86,7 +86,7 @@ const GetListingDetail=async()=>{
     setLoader(true)
     e.preventDefault();
     console.log(' le formulaire est ', formData);
-    toast("Mise à jours de l'annonce")
+    toast("Mise à jours de l'annonce...")
     
     if(mode=='edit')
     {
