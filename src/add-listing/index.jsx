@@ -56,7 +56,7 @@ const GetListingDetail=async()=>{
   setFormData(resp[0])
   console.log(resp);
   setFeaturesData(resp[0].features)
-  // setFeaturesData(resp[0])
+
   
 }
 
@@ -86,7 +86,7 @@ const GetListingDetail=async()=>{
     setLoader(true)
     e.preventDefault();
     console.log(' le formulaire est ', formData);
-    toast('please wait...')
+    toast("Mise à jours de l'annonce")
     
     if(mode=='edit')
     {
