@@ -51,7 +51,9 @@ function SearchByCategory() {
                 )):
                 
                 [1,2,3,4,5,6,7,8].map((item,index)=>(
-                    <div key={index} className=' h-[320px] rounded-xl bg-slate-200  animate-pulse'>
+                    <div key={index} className=' h-[320px] flex justify-center items-center rounded-xl bg-slate-200  animate-pulse'>
+
+                        <h2 className=' font-medium text-2xl text-cyan-950'>Bientôt ici une annonce...</h2>
                     </div>
                 ))
 
