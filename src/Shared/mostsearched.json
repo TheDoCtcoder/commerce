@@ -1,91 +1,112 @@
 [
     {
+        "id": 1,
         "listingTitle": "Aston Martin",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 1,
-        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/car-marketplace-e4417.appspot.com/o/car-marketplace%2F1725471028974.jpeg?alt=media&token=94ab59b7-d8b4-44fa-bbe9-71a0fb51e480",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 1,
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/car-marketplace-e4417.appspot.com/o/car-marketplace%2F1725471028974.jpeg?alt=media&token=94ab59b7-d8b4-44fa-bbe9-71a0fb51e480"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "75989"
     },
     {
+        "id": 2,
         "listingTitle": "Peugeot 208",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 3,
-        "imageUrl": "https://www.peugeot.be/content/dam/peugeot/master/b2c/index/mobile-2023/1_HOMEPAGE_NEWS_M@2x.jpg?imwidth=768",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 3,
+                "imageUrl": "https://www.peugeot.be/content/dam/peugeot/master/b2c/index/mobile-2023/1_HOMEPAGE_NEWS_M@2x.jpg?imwidth=768"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "22989"
     },
     {
+        "id": 3,
         "listingTitle": "Aixam",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 4,
-        "imageUrl": "https://www.aixam-belgium.be/ressources/modeles/zoom_aixam-e-crossover-premium-bleu-saphir-mobile.webp",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 4,
+                "imageUrl": "https://www.aixam-belgium.be/ressources/modeles/zoom_aixam-e-crossover-premium-bleu-saphir-mobile.webp"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "9989"
     },
     {
+        "id": 4,
         "listingTitle": "Peugeot 2008 GT",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 5,
-        "imageUrl": "https://www.peugeot.be/content/dam/peugeot/master/b2c/open/desk/2008/color_visualiser/2008_gt_orange-fusion_1920x1080_2.jpg",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 5,
+                "imageUrl": "https://www.peugeot.be/content/dam/peugeot/master/b2c/open/desk/2008/color_visualiser/2008_gt_orange-fusion_1920x1080_2.jpg"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "18700"
     },
     {
+        "id": 5,
         "listingTitle": "Fiat 500 Abarth",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 6,
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU68sgyyEBnKiYnqLLccb8CwVGY2sVrgz15Q&s",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 6,
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU68sgyyEBnKiYnqLLccb8CwVGY2sVrgz15Q&s"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "11000"
     },
     {
+        "id": 6,
         "listingTitle": "VW Coccinelle",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 7,
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Volkswagen_Beetle_5.jpg",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 7,
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Volkswagen_Beetle_5.jpg"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "6800"
     },
     {
+        "id": 7,
         "listingTitle": "Fiat Uno",
         "fuelType": "Diesel",
         "model": "Charger",
         "type": "Extended Cab Pickup",
-        "images":[ 
-            {"id": 8,
-        "imageUrl": "https://public.carjager.com/content/2016/11/Turbo-25-Br%C3%A9sil.jpeg",
-        "carListingId": 77}],
+        "images": [
+            {
+                "id": 8,
+                "imageUrl": "https://public.carjager.com/content/2016/11/Turbo-25-Br%C3%A9sil.jpeg"
+            }
+        ],
         "mileage": 235000,
         "transmission": "Automatique",
         "sellingPrice": "4500"
