@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Separator } from "@/components/ui/separator"
 import { CiSearch } from "react-icons/ci";
@@ -11,24 +11,31 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import { Link } from 'react-router-dom';
 
 
 function Search() {
+
+    const [condition,setCondition]= useState()
+    const [make,setMake]= useState()
+    const [price,setPrice]= useState(2000000)
+
     return (
         <div className=' p-2  md:p-5 bg-white  rounded-md  
     md:rounded-full flex-col  md:flex  md:flex-row gap-10  px-5
      items-center w-[60%] '>
-            <Select>
+            <Select onValueChange={(value)=>setCondition(value)}>
                 <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
                     <SelectValue placeholder="Voitures" />
                 </SelectTrigger>
                 <SelectContent>
-                    <SelectItem value="light">Nouvelle</SelectItem>
-                    <SelectItem value="dark">Occasion</SelectItem>
+                    <SelectItem value="Nouvelle">Nouvelle</SelectItem>
+                    <SelectItem value="Occasion">Occasion</SelectItem>
                 </SelectContent>
+
             </Select>
             <Separator orientation="vertical"  className="hidden md:block" />
-            <Select>
+            <Select onValueChange={(value)=>setMake(value)}>
                 <SelectTrigger className="  outline-none md:border-none w-full shadow-none text-lg">
                     <SelectValue placeholder="Marques" />
                 </SelectTrigger>
@@ -40,7 +47,7 @@ function Search() {
                 </SelectContent>
             </Select>
             <Separator orientation="vertical" className="hidden md:block" />
-            <Select>
+            <Select onValueChange={(value)=>setPrice(value)}>
                 <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
                     <SelectValue placeholder="Prix" />
                 </SelectTrigger>
@@ -51,10 +58,10 @@ function Search() {
                   
                 </SelectContent>
             </Select>
-            <div>
+            <Link to={'/search?condition='+condition+'&make='+make+'&sellingPrice='+price}>
             <CiSearch className=' text-[50px]  bg-primary rounded-full p-3 text-white hover:scale-105
              transition-all  cursor-pointer'/>
-            </div>
+            </Link>
 
         </div>
     )

@@ -17,7 +17,7 @@ function SearchByCategory() {
 
     useEffect(()=>{
         GetCarList()
-    },[])
+    },[carList])
 
     const GetCarList= async()=>{
 

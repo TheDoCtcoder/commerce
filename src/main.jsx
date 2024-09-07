@@ -9,6 +9,7 @@ import Profile from './profile'
 import AddListing from './add-listing'
 import { Toaster } from './components/ui/sonner'
 import SearchByCategory from './search/[category]'
+import SearchByOptions from './search'
 
 // let router = createBrowserRouter(routes, { basename: "/base" })
 
@@ -32,6 +33,10 @@ const router=createBrowserRouter([
   {
     path:'/search/:category',
     element:<SearchByCategory/>
+  },
+  {
+    path:'/search',
+    element:<SearchByOptions/>
   }
 
 ],{ basename: "/commerce/" })

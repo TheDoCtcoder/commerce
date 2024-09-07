@@ -1,11 +1,11 @@
-import { integer, json, pgTable, serial, varchar } from "drizzle-orm/pg-core";
+import { integer, json, PgInteger, pgTable, serial, varchar } from "drizzle-orm/pg-core";
 
 export const CarListing=pgTable('carListing',{
     id:serial('id').primaryKey(),
     listingTitle:varchar('listingTitle').notNull(),
     tagline:varchar('tagline'),
     originalPrice:varchar('originalPrice'),
-    sellingPrice:varchar('sellingPrice').notNull(),
+    sellingPrice:integer('sellingPrice').notNull(),
     category:varchar('category').notNull(),
     condition:varchar('condition').notNull(),
     make:varchar('make').notNull(),
