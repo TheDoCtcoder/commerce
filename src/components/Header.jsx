@@ -14,7 +14,7 @@ function Header() {
       <div className='flex gap-5 items-center'>
       {/* <img src="logo.svg" alt="logo" width={150} height={100} /> */}
       <img src={Logo} alt="logo" width={40} height={40} />
-      <h2 className=' font-medium'>Vente & Location</h2>
+      <h2 className=' font-medium'>Toni Deplano</h2>
       </div>
       
 
