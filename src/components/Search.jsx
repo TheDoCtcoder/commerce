@@ -21,9 +21,9 @@ function Search() {
     const [price,setPrice]= useState(2000000)
 
     return (
-        <div className=' p-2  md:p-5 bg-white  rounded-md  
+        <div className=' p-8  md:p-5  bg-white  rounded-md  
     md:rounded-full flex-col  md:flex  md:flex-row gap-10  px-5
-     items-center w-[60%] '>
+     items-center w-[70%] md:w-[85%] lg:w-[60%] '>
             <Select onValueChange={(value)=>setCondition(value)}>
                 <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
                     <SelectValue placeholder="Voitures" />
@@ -59,7 +59,7 @@ function Search() {
                 </SelectContent>
             </Select>
             <Link to={'/search?condition='+condition+'&make='+make+'&sellingPrice='+price}>
-            <CiSearch className=' text-[50px]  bg-primary rounded-full p-3 text-white hover:scale-105
+            <CiSearch className='  mt-5 mb-5  text-[40px]  bg-primary rounded-full p-2 text-white hover:scale-105
              transition-all  cursor-pointer'/>
             </Link>
 
