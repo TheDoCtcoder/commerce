@@ -11,6 +11,7 @@ const CarMakes=[
     {id: 34, "name": "Cadillac"},
     {id: 3, "name": "Chevrolet"},
     {id: 35, "name": "Chrysler"},
+    {id: 50, "name": "Citroën"},
     {id: 24, "name": "Dodge"},
     {id: 4, "name": "Ferrari"},
     {id: 28, "name": "Fiat"},
@@ -42,6 +43,7 @@ const CarMakes=[
     {id: 18, "name": "Toyota"},
     {id: 19, "name": "Volkswagen"},
     {id: 20, "name": "Volvo"}
+   
     
 ]
 
@@ -93,7 +95,7 @@ const Category=[
     },
     {
         id:3,
-        name:'Hatchback',
+        name:'Hayon',
         icon:'https://cdn-icons-png.flaticon.com/128/5035/5035167.png'
     },
     {
@@ -103,7 +105,7 @@ const Category=[
     },
     {
         id:5,
-        name:'Cabriolet',
+        name:'Decapotable',
         icon:'https://cdn-icons-png.flaticon.com/128/5035/5035202.png'
     },
     {

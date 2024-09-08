@@ -34,7 +34,7 @@
       "label": "Categorie",
       "name": "category",
       "fieldType": "dropdown",
-      "options": ["Berline", "SUV", "Camionette", "Coupe", "Décapotable", "Van", "Hayon","Electrique","Hybride"],
+      "options": ["Berline", "SUV", "Camionette", "Coupe", "Decapotable", "Van", "Hayon","Electrique","Hybride"],
       "required": true,
       "column": 1,
       "icon": "FaCar"
@@ -56,6 +56,8 @@
       "required": true,
       "options": [
         "Toyota",
+        "Citroën",
+        "Peugeot",
         "Honda",
         "Ford",
         "Chevrolet",
