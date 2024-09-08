@@ -22,20 +22,18 @@ function InfoSection() {
 
         <div className="p-8 sm:p-16 lg:p-24">
           <h2 className="text-2xl font-bold sm:text-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, debitis.
+          "Publiez votre annonce et trouvez rapidement des acheteurs ou des locations pour votre voiture !"
           </h2>
 
           <p className="mt-4 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, molestiae! Quidem est
-            esse numquam odio deleniti, beatae, magni dolores provident quaerat totam eos, aperiam
-            architecto eius quis quibusdam fugiat dicta.
+          Notre plateforme vous permet de publier facilement des annonces pour la vente ou la location de vos voitures. Que vous soyez un particulier ou un professionnel, vous pouvez proposer votre véhicule à un large public, tout en bénéficiant d'une interface simple et intuitive. 
           </p>
 
           <a
             href="#"
             className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
           >
-            Get in Touch
+            Rechercher une annonce
           </a>
         </div>
       </div>
