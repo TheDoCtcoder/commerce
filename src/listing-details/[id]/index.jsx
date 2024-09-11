@@ -9,6 +9,7 @@ import Service from '@/Shared/Service';
 import ImageGallery from '../components/ImageGallery';
 import Description from '../components/Description';
 import Features from '../components/Features';
+import Pricing from '../components/Pricing';
 
 function ListingDetail() {
 
@@ -58,6 +59,7 @@ useEffect(()=>{
           {/* //* right  */}
           <div className=''>
                 {/* //* Pricing  */}
+                <Pricing carDetail={carDetail}/>
 
                 {/* //* Car Property  */}
 
