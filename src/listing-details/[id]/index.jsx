@@ -10,6 +10,7 @@ import ImageGallery from '../components/ImageGallery';
 import Description from '../components/Description';
 import Features from '../components/Features';
 import Pricing from '../components/Pricing';
+import Specification from '../components/Specification';
 
 function ListingDetail() {
 
@@ -61,7 +62,8 @@ useEffect(()=>{
                 {/* //* Pricing  */}
                 <Pricing carDetail={carDetail}/>
 
-                {/* //* Car Property  */}
+                {/* //* Car Specification  */}
+                <Specification carDetail={carDetail} />
 
                 {/* //* Owners Details  */}
           </div>
