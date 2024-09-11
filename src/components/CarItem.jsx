@@ -4,11 +4,20 @@ import { LuFuel } from "react-icons/lu";
 import { IoMdSpeedometer } from "react-icons/io";
 import { GiGearStickPattern } from "react-icons/gi";
 import { MdOutlineOpenInNew } from "react-icons/md";
+import { Link, useParams } from 'react-router-dom';
 
 
 
 function CarItem({car}) {
+
+    
+
+
+
     return (
+
+
+        <Link to={'/listing-details/'+car?.id}>
         <div className=' rounded-xl bg-white border hover:shadow-md cursor-pointer'>
             <h2 className=' absolute  m-2   bg-green-500 px-2 rounded-full text-sm text-white' > Nouvelle </h2>
             <div className='  bg-cyan-700 h-60'>
@@ -42,6 +51,7 @@ function CarItem({car}) {
                 </div>
             </div>
         </div>
+        </Link>
     )
 }
 
