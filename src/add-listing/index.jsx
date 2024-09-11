@@ -174,8 +174,8 @@ const GetListingDetail=async()=>{
                 // <div key={index} className=' flex gap-2 items-center' >
                 <div key={index} className=' flex gap-2  items-center' >
                   {/* <Checkbox onCheckedChange={(value)=>handleInputChange(item.name,value)} /> <h2>{item.label}</h2> */}
-                  <Checkbox onCheckedChange={(value)=>handleFeatureChange(item.name,value)}
-                    checked={featuresData?.[item.name]}/>
+                  <Checkbox onCheckedChange={(value)=>handleFeatureChange(item.label,value)}
+                    checked={featuresData?.[item.label]}/>
                      <h2>{item.label}</h2>
                 </div>
 
