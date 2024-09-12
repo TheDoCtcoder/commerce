@@ -11,6 +11,10 @@ import Description from '../components/Description';
 import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import Specification from '../components/Specification';
+import OwnersDetail from '../components/ownersDetail';
+import Footer from '@/components/Footer';
+import FinancialCalc from '../components/financialCalc';
+import MostSearchedCar from '@/components/MostSearchedCar';
 
 function ListingDetail() {
 
@@ -56,6 +60,9 @@ useEffect(()=>{
 
                     {/* //* Features List  */}
                     <Features carDetail={carDetail}/>
+
+                     {/* //* Calcul prêt  */}
+                    <FinancialCalc carDetail={carDetail}/>
             </div>
           {/* //* right  */}
           <div className=''>
@@ -66,10 +73,12 @@ useEffect(()=>{
                 <Specification carDetail={carDetail} />
 
                 {/* //* Owners Details  */}
+                <OwnersDetail carDetail={carDetail} />
           </div>
         </div>
+        <MostSearchedCar/>
     </div>
-
+      <Footer/>
     </div>
   )
 }
