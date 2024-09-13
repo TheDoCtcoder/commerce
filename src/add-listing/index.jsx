@@ -34,6 +34,7 @@ const navigate=useNavigate()
 const {user} = useUser()
 const [fichierVide,setFichierVide]=useState([])
 const [fichierImageBD,setFichierImageBD]=useState([])
+const [obligatoire,setObligatoire]=useState([])
 
 const mode=searchParams.get('mode');
 const recordId=searchParams.get('id')
@@ -68,7 +69,16 @@ const GetListingDetail=async()=>{
       [name]: value
     }))
 
+    setObligatoire((prev) => ({
+      ...prev,
+      [name]:value
+ }))
+
     console.log(formData);
+    // people.filter(person => person.age < 60)
+    const filtre = formData.condition
+    console.log('donnée filtrée : ',filtre)
+    console.log('donnée obligatoire : ',obligatoire)
   }
 
   const handleFeatureChange =(name, value) => {
@@ -152,7 +162,8 @@ const GetListingDetail=async()=>{
                 <div key={index}>
                   <label className=' text-sm flex gap-2 items-center mb-1'>
                     <IconField icon={item?.icon}/>
-                    {item?.label} {item.required && <span className=' text-red-500'>*</span>}</label>
+                    {item?.label} {item.required && <span className=' text-red-500'>*</span>
+                    } {!obligatoire[item.name] && item.required && (<span className=' text-red-500'>Champ obligatoire</span> )} </label>
                   {item.fieldType == 'text' || item.fieldType == 'number'
                     ? <InputField item={item} handleInputChange={handleInputChange} carInfo={carInfo} />
                     : item.fieldType == 'dropdown'
