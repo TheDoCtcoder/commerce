@@ -74,6 +74,9 @@ const GetListingDetail=async()=>{
       [name]:value
  }))
 
+   if (name == 'year') console.log(('année'));
+   
+
     console.log(formData);
     // people.filter(person => person.age < 60)
     const filtre = formData.condition
