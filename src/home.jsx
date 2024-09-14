@@ -11,14 +11,11 @@ import Footer from './components/Footer'
 function Home() {
   return (
     <div>
-      {/*Header*/}
-
       {/* <SignInButton>
         <Button>Click me</Button>
       </SignInButton> */}
 
         <Header/>
-        {/*Hero*/}
         <Hero/>
         <Category/>
         <MostSearchedCar/>

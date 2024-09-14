@@ -172,7 +172,7 @@ const GetcarList =async()=>{
         <h2 className=' font-bold text-4xl '>Resultat de la recherche</h2>
 
             {/* Liste par catégorie */}
-            <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  mt-7'>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mt-7'>
            {carList?.length>0? carList.map((item,index)=>(
                 <div key={index}>
                     <CarItem car={item} />
