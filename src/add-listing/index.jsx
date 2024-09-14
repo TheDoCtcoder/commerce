@@ -35,6 +35,7 @@ const {user} = useUser()
 const [fichierVide,setFichierVide]=useState([])
 const [fichierImageBD,setFichierImageBD]=useState([])
 const [obligatoire,setObligatoire]=useState([])
+const [erreur,setErreur]=useState('')
 
 const mode=searchParams.get('mode');
 const recordId=searchParams.get('id')
@@ -78,10 +79,11 @@ const GetListingDetail=async()=>{
    
 
     console.log(formData);
-    // people.filter(person => person.age < 60)
+  
     const filtre = formData.condition
     console.log('donnée filtrée : ',filtre)
     console.log('donnée obligatoire : ',obligatoire)
+    setErreur('')
   }
 
   const handleFeatureChange =(name, value) => {
@@ -96,8 +98,33 @@ const GetListingDetail=async()=>{
   }
 
   const onSubmit=async(e)=>{
+
     setLoader(true)
     e.preventDefault();
+
+    if     (!formData.listingTitle ||
+              !formData.sellingPrice ||
+              !formData.category ||
+              !formData.condition ||
+              !formData.make ||
+              !formData.model ||
+              !formData.year ||
+              !formData.driveType ||
+              !formData.transmission ||
+              !formData.fuelType ||
+              !formData.mileage ||
+              !formData.color ||
+              !formData.door ||
+              !formData.listingDescription 
+
+    ) {
+      setErreur('Le formulaire n\'est pas complet !!!')
+      toast('Le formulaire n\'est pas complet !!!')
+      console.log('erreur : le formulaire n\' est pas complet')
+      console.log(' le formulaire pas complet est ', formData);
+      return ({erreur: 'erreur : le formulaire n\' est pas complet'})
+    }
+
     console.log(' le formulaire est ', formData);
     toast("Mise à jours de l'annonce...")
     
@@ -112,7 +139,7 @@ const GetListingDetail=async()=>{
         console.log(result);
         setTriggerUploadImages(result[0]?.id);
         setLoader(false)
-        // navigate('/profile')
+      
 
         
     }
@@ -138,8 +165,7 @@ const GetListingDetail=async()=>{
       console.log(result[0]?.id)
       setTriggerUploadImages(result[0]?.id);
       setLoader(false)
-      // window.location.reload(false);
-      // navigate('/profile')
+    
       
     }
 
@@ -210,14 +236,11 @@ const GetListingDetail=async()=>{
             
             { (fichierVide.length>0 || fichierImageBD.length>0)? 
                <Button onClick={(e)=>onSubmit(e)}>Envoyez </Button>:
-               <Button disabled={true} className="bg-red-500">Envoyez </Button>}
-            
-         
-            
-            
-            
-           
+               <Button disabled={true} className="bg-red-500">Envoyez </Button>}      
           </div>
+
+          <h2 className=' mt-5 font-medium flex justify-end text-red-500'>{erreur}</h2>
+
         </form>
         
         
