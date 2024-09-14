@@ -23,9 +23,9 @@ export const CarListing=pgTable('carListing',{
     offerType:varchar('offerType'),
     listingDescription:varchar('listingDescription').notNull(),
     features:json('features'),
-    createdBy:varchar('createdBy').notNull(),
-    userName:varchar('userName').notNull().default('Toni Deplano'),
-    userImageUrl:varchar('userImageUrl').default('https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg'),
+    createdBy:varchar('createdBy'),
+    userName:varchar('userName'),
+    userImageUrl:varchar('userImageUrl'),
     postedOn:varchar('postedOn')
    
 
