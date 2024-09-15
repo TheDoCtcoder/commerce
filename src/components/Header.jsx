@@ -11,7 +11,7 @@ function Header() {
   const { user, isSignedIn } = useUser();
   return (
     <div className='flex  justify-between  items-center  shadow-sm p-5 flex-col lg:flex-row'>
-      <div className='flex gap-5 items-center md:mb-2 lg:mb-0 '>
+      <div className='flex gap-5 items-center mb-2 md:mb-2 lg:mb-0 '>
         {/* <img src="logo.svg" alt="logo" width={150} height={100} /> */}
         <img src={Logo} alt="logo" width={40} height={40} />
         <h2 className=' font-medium hidden md:block '>Toni Deplano</h2>
@@ -27,7 +27,10 @@ function Header() {
 
       {isSignedIn ?
         <div className='flex items-center md:mt-2 lg:mt-0 gap-2' >
-          <UserButton />
+          <div className='hidden md:block '>
+          <UserButton/>
+          </div>
+          
           <Link to={'/profile'} >
             <Button>Placer une annonce</Button>
 
@@ -38,7 +41,7 @@ function Header() {
           <SignInButton>
             <Button className=' mx-3'>Connexion</Button>
           </SignInButton>
-          <Button>Placer une annonce</Button>
+          {/* <Button>Placer une annonce</Button> */}
         </div>
 
       }
