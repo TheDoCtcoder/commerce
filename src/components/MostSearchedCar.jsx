@@ -16,7 +16,7 @@ function MostSearchedCar() {
     console.log(MesDatas);
     
   return (
-    <div className=' mx-24'>
+    <div className='mx-5 md:mx-24'> 
         <h2 className=' font-bold  text-3xl text-center mt-16  mb-7'>Voitures les plus recherchées</h2>
 
         <Carousel>

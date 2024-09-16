@@ -3,12 +3,15 @@ import React from 'react'
 // import { Button } from './ui/button';
 import { SignInButton } from '@clerk/clerk-react'
 import { Button } from './ui/button'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import Logo from './../assets/peugeot5082.png'
 
 
 function Header() {
-  const { user, isSignedIn } = useUser();
+  const { user, isSignedIn, isSignedOut } = useUser();
+
+  //  if (isSignedOut)  console.log('deconnexion')
+
   return (
     <div className='flex  justify-between  items-center  shadow-sm p-5 flex-col lg:flex-row'>
       <div className='flex gap-5 items-center mb-2 md:mb-2 lg:mb-0 '>

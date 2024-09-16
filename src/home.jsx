@@ -18,7 +18,7 @@ function Home() {
         <Header/>
         <Hero/>
         <Category/>
-        <MostSearchedCar/>
+        <MostSearchedCar  />
         <InfoSection/>
         <Footer/>
       </div>
