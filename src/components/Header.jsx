@@ -42,7 +42,7 @@ function Header() {
         :
         <div>
           <SignInButton>
-            <Button className=' mx-3'>Connexion</Button>
+            <Button className='mt-3 lg:mt-0'>Connexion</Button>
           </SignInButton>
           {/* <Button>Placer une annonce</Button> */}
         </div>

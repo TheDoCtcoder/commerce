@@ -44,7 +44,9 @@ const router=createBrowserRouter([
     element:<ListingDetail/>
   }
 
-],{ basename: "/commerce/" })
+]
+,{ basename: "/commerce/" }
+)
 
 // Import your publishable key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
